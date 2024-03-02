@@ -44,3 +44,11 @@ After setting up the Docker container and installing dependencies, you can serve
 
 ```bash
 $(npm bin)/ng serve --port=3000 --host=0.0.0.0
+```
+
+Modify below files to adjust backend service ports, if default ports are not used
+
+```bash
+src/app/services/openai.service.ts
+src/app/services/vertexai.service.ts
+```
