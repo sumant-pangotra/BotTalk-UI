@@ -42,15 +42,13 @@ Make sure you have Docker installed on your system.
 
 After setting up the Docker container and installing dependencies, you can serve the application using the following command:
 
-```bash
-$(npm bin)/ng serve --port=3000 --host=0.0.0.0
-```
+    $(npm bin)/ng serve --port=3000 --host=0.0.0.0
 
 Modify below files to adjust backend service ports, if default ports are not used
 
-```bash
-src/app/services/openai.service.ts
-src/app/services/vertexai.service.ts
-```
+[openai.service.ts](/src/app/services/openai.service.ts)
+
+[vertexai.service.ts](/src/app/services/vertexai.service.ts)
+
 ### Start Backend application
-[https://github.com/sumant-pangotra/BotTalk-Backend] Bottalk Backend
+[Bottalk Backend](https://github.com/sumant-pangotra/BotTalk-Backend)
