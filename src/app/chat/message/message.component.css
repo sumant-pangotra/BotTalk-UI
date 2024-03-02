@@ -1,0 +1,6 @@
+.span {
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+  }

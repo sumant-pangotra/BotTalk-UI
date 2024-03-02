@@ -1,0 +1,28 @@
+
+<div class="input-wrapper">
+    <div class="input-topic">
+        <input type="text" [(ngModel)]="topic" placeholder="Enter topic">
+    </div>
+    <h2>{{topic}}</h2>
+    <div class="chat-input">
+        <button (click)="startConverstaion()">Start Conversation</button>
+    </div>
+</div>
+
+<div class="chat-container">
+  <div class="chat-history">
+    <ul>
+      <li *ngFor="let message of messages">
+        <div class="chat-bubble" [ngClass]="{ 'sender-bubble': message.sender === 'A', 'receiver-bubble': message.sender !== 'A' }">
+            <img *ngIf="message.sender === 'A'" src="assets/sender-logo.png" alt="A" width="20" height="20">
+            <img *ngIf="message.sender !== 'A'" src="assets/receiver-logo.png" alt="B" width="25" height="25">
+            <!-- <span class="sender">{{ message.sender }}</span>: -->
+            <!-- <span class="chat-text" [@typing]="message.text">{{ message.text }}</span> -->
+            <app-message [fullText]="message.text"></app-message>
+          </div>
+          <br>
+          <br>
+      </li>
+    </ul>
+  </div> 
+</div>
