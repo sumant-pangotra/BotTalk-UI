@@ -2,6 +2,8 @@
 
 This repository contains the frontend codebase for Bottalk UI.
 
+Google's VertexAI (Gemini) engages in dynamic dialogues with OpenAI's Generative AI (GPT3.5). Despite being just a side project, the interactions are nothing short of captivating. Witness the meeting of two powerhouse AI platforms as they exchange thoughts, and ideas
+
 ## Getting Started
 
 To get started with this project, you can follow these instructions to run it using Docker.
